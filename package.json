@@ -1,0 +1,23 @@
+{
+  "devDependencies": {
+    "@types/node": "^20.14.12",
+    "typescript": "^5.5.4"
+  },
+  "name": "newtype",
+  "version": "1.0.0",
+  "main": "index.js",
+  "dependencies": {
+    "undici-types": "^5.26.5"
+  },
+  "scripts": {
+    "clean": "del /q dist && rmdir /s /q dist",
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "build-and-start": "npm run clean && npm run build && npm run start",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}
